@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="assets/css/Estilo.css">
+</head>
+<body>
+    <section id="header">
+      <div class="hdr">
+        <header >
+            <div class="contenedor__nav">
+                <h1><span>FA</span></h1>
+                <nav id="Conmenu" >
+                           <ul id="nav_link"  class="contenedor__menu__ul">
+                            <li><a  href="#header"onclick="selecion(this)">Inicio</a></li>
+                            <li><a  href="#Acerca" onclick="selecion(this)">Acerca de mi</a></li>
+                            <li><a  href="#habilidades"onclick="selecion(this)">Habilidades</a></li>
+                            <li><a  href="#Portafolio"onclick="selecion(this)">Portafolio</a></li>
+                            <li><a  href="#Contacto"onclick="selecion(this)">Contacto</a></li>
+                           </ul> 
+                </nav>
+                <div id="icono__menu" onclick="Menuresponsive()">
+                    <img class="fa-solid fa-bars" src="assets/img/menu 1.svg" alt="">
+                </div>
+            </div>
+            
+           
+        </header>
+        <div class="contenedor__name"> 
+            <div class="conten__P">
+               <p> <span class="Name">Soy <br> Fabian Andres Mina</span> </p> 
+                <h2>Desarrollador web</h2>
+                
+            </div>
+            <div class="conten__img" >
+                <img  class="conten__hdr__img" src="assets/img/mi imagen.png" alt="">
+               
+            </div>
+        </div>
+      </div>   
+    </section>
+    <main>
+        
+    <section id="Acerca" class="Sobremi">
+       
+        <div class="conten__sobremi">
+            <h2 class="conten__sobremi__titulo">Acerca de mi</h2>
+            <h2 class="conten__sobremi__titulo2">Desarrollador web</h2>
+            <p>Soy uma persona  responsable, creativo,con iniciativa y puntualidad. Asumo conagrado los retos y metas que se me pudiera plantear; con buen manejo de relaciones interpersonales, facilidad para el aprendizaje</p>
+            <a id="botnCv" class="botn__CV" href="#Acerca" >Descargar CV</a>
+        </div>
+    
+    </section>
+    <div id="Estudios" class="Conten__estudios">
+            <h2 class="conten__estudios__titulo">Estudios</h2>
+            <div class="conten__curso">
+                <div class="cursos" >
+                    <img class="img_Uni" src="assets/img/gpTSkv26_400x400.jpg" alt="">
+                    <p>USC</p>
+                    <p>2104</p>
+                    <p>Ing Electronica</p>
+                </div>
+                <div class="cursos">
+                  <img  class="img_ademlo" src="assets/img/logo_academlo 2.png" alt="">
+                  <p>Academlo</p>
+                  <p>2022</p>
+                  <p>Desarrollador Wed</p> 
+                </div>
+            </div>
+       
+    </div>
+    <!--              -->
+    <div id="habilidades" class="hbd__section">
+        <h3 class="hbd__section__titulo">Habilidades</h3>
+        <div class="hbd__section_lenguajes">
+            <div class="valor__porcentaje">
+                <p><span class="lenguajes"></span>HTML & CSS</p>
+                <span class="porcetaje">80%</span>
+            </div>
+            <div  class="barra__porcentaje">
+                <div id="barra__html" class="dibujar_barra1"></div>
+            </div>
+        </div>
+          <div class="hbd__section_lenguajes">
+            <div class="valor__porcentaje">
+                <p><span class="lenguajes"></span>JAVASCRIPT</p>
+                <span class="porcetaje">90%</span>
+            </div>
+            <div  class="barra__porcentaje">
+                <div id="Barra_JS" class="dibujar_barra2"></div>
+          </div>
+        </div>
+    </div>
+      <!--              -->
+
+      <!--              -->
+    <section id="Portafolio" class="Pfolio-section" >
+        <div>
+            <h2 class="Pfolio-section-titulo">Portafolio</h2>
+            <div class="fila">
+               <div class="proyecto">    
+               </div>
+               <div class="proyecto">     
+            </div>
+            <div class="proyecto">  
+            </div>
+            </div> 
+        </div>
+    </section>
+    <!--              -->
+    <section id="Contacto" class="Contac-section">
+           
+            <h2 class="Contac-section-titulo">Contacto</h2>
+           
+            <div class="contenedor-form">
+                <form action="">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                        <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                    </div>
+                    <div class="fila">
+                        <input type="text" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    </div>
+    
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+
+    </section>
+    </main>
+    <footer>
+        <div class="contFooter">
+            <p>Todos los derechos reservados </p>
+       </div>
+        
+    </footer>  
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
